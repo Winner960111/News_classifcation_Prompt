@@ -1,0 +1,10 @@
+_type: prompt
+input_variables: ["topics"]
+template: |
+  Help to paint the idea of similarities between the different events described in the input when formulating the output.
+
+  ###Goal###
+  Provide an idea of what is similar amongst all of the happenings in the Politics category of news.
+  
+  ###Topics and their predictions###
+  {topics}

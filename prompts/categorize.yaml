@@ -1,0 +1,32 @@
+_type: prompt
+input_variables: ["primary_titles", "secondary_titles", "example"]
+template: |
+  Let's think step by step:
+
+  ###Task###
+  Using the 20 "Primary" titles as overall news, group the titles from "Secondary" titles with them
+  Important: match just 1 "Secondary" with each each "Primary" title
+
+  Hard constraint: only make groupings between primary and secondary titles ONLY if they have the EXACT same words within them
+  **Keep in mind some of the primary titles will not have a secondary title grouping.
+  Create a vague enough title to represent the grouping created.
+
+  ###Output Format###
+  Hard Constraint: There must be 20 topics overall with the title of each of the "Primary" being the main focus.
+  The output should be strictly as follows and nothing more should be. No additional text, just a dictionary. Without "Note:"!
+  If you want to write any notes, don't do it!
+  Primary, Seconday and Title are requried fields
+  Do not provide any additional information like Note.
+  Plz follow the output format restrictly
+  Do not use primary titles as secondary titles
+
+  This must be python dictinoary or json object
+
+  ###Output Format to follow###
+  {example}
+
+  ###20 Primary###
+  {primary_titles}
+
+  ###Secondary###
+  {secondary_titles}

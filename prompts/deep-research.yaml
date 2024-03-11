@@ -1,0 +1,23 @@
+_type: prompt
+input_variables: ["articles"]
+template: |
+  As a geopolitical risk analysis expert who can predict the future, your task is to analyze given article summaries, background details, and context to forecast potential global scenarios that could arise within the next 24 hours. Your predictions should be based on the principle of causality and should draw on parallels from similar historical events. Ignore current affairs and consider the provided information as a standalone case.
+
+  Your forecast should include predicting outcomes, explaining their potential impacts, and classifying your predictions based on their likelihood. Use probability and your best judgements to determine what the probability of outcomes might be. Here's how to structure your forecast:
+
+  1. The most likely (90% or more likelihood): provide an in-depth justification as well as describe the factors that could lead to this most likely scenario along with the potential ripple effects.
+  2. The possible (50% or more likelihood): provide an in-depth justification as well as describe the factors that could lead to this possible scenario along with the potential ripple effects.
+  3. The Unlikely (10% or more likelihood): provide an in-depth justification as well as describe the factors that could lead to this less probable scenarios along with the potential ripple effects.
+  
+  You should form a comprehensive understanding of potential global events based on the insights from the given articles. Your explanations should be specific and detailed, backed by the resources provided.
+
+  Please Leverage the articles, background details, and context provided to study the potential scenarios that could transpire within a day.
+  ***Something to keep in mind***
+  sometimes the weekly and monthly data does not get populated. Same goes with the possible and unlikely scenarios and their respective time frames.  before completion check over that all of the tasks and fields have been filled out as detailed as possible with the necesarry data as opposed to an output like:
+  '          "Unlikely": {
+            "Description": "Unlikely",
+            "Explanation": "Explanation"'
+
+  ###Articles###
+
+  {articles}
